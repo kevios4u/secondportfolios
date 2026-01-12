@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin Nkwe | Portfolio with HTML, CSS and Javascript</title>
+  <link rel="stylesheet" href="./assests/css/style.css">
+  <link rel="stylesheet" href="./assests/fontawesome-free-7.1.0-web/css/all.min.css">
+  
+</head>
+<body>
+  <!--Header and Navigation-->
+  <header>
+    <div class="main-head passport">
+        <img src="./assests/images/passport1.jpg" alt="Kevin Uchechukwu Nkwe | Passport">
+      <div class="head-text">
+        <h2>Kevin Nkwe | Portfolio</h2>
+        <p>Frontend Developer</p>
+      </div>
+    </div>
+    <div class="main-nav">
+      <div class="menu-toggle" id="menuToggle">
+      <i class="fa-shard fa-solid fa-bars fa-3x" style="color: white;"></i>
+      </div> 
+      <nav class="navbar">
+      <ul class="nav-link">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <!--Classic Hero-->
+  <section id="home" class="classic-hero fade-in">
+    <h1>Kevin Nkwe</h1>
+    <h3>Frontend Derveloper</h3>
+    <p>Computer Science graduate passionate about building clean and functional web applications.</p>
+    <a href="#project" class="btn">View Projects</a>
+  </section>
+
+  <!--About-->
+  <section id="about" class="section slide-up">
+    <h2>About Me</h2>
+    <p>Hello! I am a Computer Science graduate and Principal Computer Technologist with experience in frontend development.</p>
+    <a href="#" class="btn">Read More</a>
+  </section>
+
+  <!--Skills-->
+  <section id="skill" class="section bg-light slide-up">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!--Projects-->
+  <section id="project" class="section slide-up">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio built with HTML, CSS and JavaScript.</p>
+        <span>HTML + CSS + JavaScript</span>
+      </div>
+      <div class="project-card">
+        <h3>Login System</h3>
+        <p>Login Page with HTML, CSS and JavaScript (Basic)</p>
+        <span>HTML + CSS + JavaScript</span>
+      </div>
+    </div>
+  </section>
+
+  <!--Experience-->
+  <section id="experience" class="section bg-light slide-up">
+    <h2>Experience</h2>
+    <div class="experience-card">
+          <h3>Principal Computer Technologist <span class="experience-year">| 2025 &dash; 2028</span></h3>
+        <h4>Nigerian Institute of Leather and Science Technology, Zaria.</h4>
+          <div class="experience-indent">
+            Supporting and assisting in the execution of projects. <br>
+            Taking custody of laboratory and workshop consumables. <br>
+            Rendering accounts for all laboratory and workshop consumables to the HOD. <br>
+            Arranging and coordinating student excursions and field trips. <br>
+            Developing and improving practical manuals. <br> 
+            Performing other assigned duties.
+            <br>
+          </div> 
+        </div>
+        <div class="experience-card">
+          <h3>Senior Computer Technologist <span class="experience-year"> | 2024 &dash; 2024</span></h3>
+        <h4>Nigerian Institute of Leather and Science Technology, Zaria.</h4>
+          <div class="experience-indent" >
+            Assisting with the evaluation of students' practical work. <br>
+            Assisting superior officers in the running of laboratories and workshops. <br>
+            Performing other assigned duties. 
+          </div>
+        </div>
+        <div class="experience-card">
+          <h3>Computer Technologist II, I<span class="experience-year"> | 2014 &dash; 2024</span></h3>
+        <h4>Nigerian Institute of Leather and Science Technology, Zaria.</h4>
+          <div class="experience-indent" >
+            Assisting with general supervision of laboratories and/or workshops, including subordinate staff. <br>
+            Maintaining accurate records of all equipment (capital and consumables) to prevent loss. <br>
+            Ensuring apparatus for student practicals are properly set out and functional. <br>
+            Arranging for the prompt maintenance of equipment. <br>
+            Supporting and assisting in the execution of projects. <br>
+            Performing other assigned duties.
+          </div>
+        </div>
+        <div class="experience-card">
+          <h3>Assistant Computer Technician <span class="experience-year"> |  2011 &dash; 2023</span></h3>
+        <h4>Nigerian Institute of Leather and Science Technology, Zaria.</h4>
+          <div class="experience-indent" >
+            The Assistant Computer Technician supports the installation, maintenance, troubleshooting, and repair of computer systems, peripherals, and related hardware. <br>
+            Working under supervision, this role ensures that all IT equipment is functional and that end-users receive prompt technical assistance to maintain productivity.
+          </div>
+        </div>
+    </section>
+
+     <!-- Download CV -->
+     <section id="download" class="section slide-up">
+      <h2>Download My CV</h2>
+      <a class="btn" href="./assests/documents/Kevin-U-Nkwe-CV.pdf">Here</a>
+     </section>
+
+     <!--Contact-->
+     <section id="contact" class="section bg-light slide-up">
+      <h2>Contact Me</h2>
+      <form class="contact-form" method="POST" action="contact.php">
+        <input type="text" name="name" id="name" placeholder="Your name" required>
+        <input type="email" name="email" id="email" placeholder="Your email" required>
+        <textarea name="message" id="message" placeholder="Your message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+     </section>
+     
+     <!-- footer -->
+      <footer>
+        <p>&copy 2026 Kevin Uchechukwu Nkwe - Portfolio | All Rights Reserved</p>
+        <p>
+          <a href="#"><span class="fa-brands fa-facebook fa-2x" style="color: white;"></span></a>
+          <a href="#"><span class="fa-brands fa-twitter fa-2x" style="color: white;"></span></a>
+          <a href="#"><span class="fa-brands fa-google-plus-g fa-2x" style="color: white;"></span></a>
+          <a href="#"><span class="fa-brands fa-linkedin fa-2x" style="color: white;"></span></a>
+          <a href="#"><span class="fa-brands fa-instagram fa-2x" style="color: white;"></span></a>
+        </p>
+      </footer>
+  </main>
+
+  <script src="./assests/js/script.js"></script>
+</body>
+</html>
