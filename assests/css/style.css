@@ -174,19 +174,36 @@ header{
     display: block;
   }
 
-.nav-link{
+.nav-link {
   position: absolute;
   top: 60px;
-  right: 0;
+  right: 20px;
   background: var(--bg-color-black);
   width: 200px;
   flex-direction: column;
   display: none;
+  padding: 10px; 
+  align-items: flex-start;
+}
+.nav-link a:hover{
+  color: var(--text-color-white);
+  text-decoration: none;
+  font-size: 16px;
+  background-color: var(--bg-color-black);
+  padding: 15px;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid var(--border-color-white);
 }
 .nav-link li{
-  margin: 15px;
+  margin: 10px 0;
 }
-.nav-link:active{
+.nav-link a{
+  background: transparent;
+  color: var(--text-color-white);
+}
+
+.nav-link.active{
   display: flex;
 }
 }
