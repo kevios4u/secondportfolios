@@ -32,6 +32,7 @@ header{
   width: 100%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  box-shadow: 5px 0 15px 3px rgb(59, 54, 54);
 }
 header{
   position: sticky;
@@ -47,7 +48,7 @@ header{
 }
 .passport img{
   height: auto;
-  width: 28%;
+  width: 18%;
   border: 1.5px solid var(--border-color-white);
   border-radius: 100%;
 }
@@ -307,6 +308,7 @@ footer{
   color: var(--text-color-white);
   text-align: center;
   padding: 20px;
+  box-shadow: 5px 0 15px 3px rgb(59, 54, 54);
 }
 .classic-hero p, #about p, #download h2, #experience h2{
   margin-bottom: 15px;
@@ -316,6 +318,7 @@ footer{
   border: 2px solid var(--bg-color-white);
   border-radius: 15px;
   padding: 15px;
+  background-color: var(--bg-hero-color);
 }
 .experience-year{
   float: right;
@@ -325,4 +328,34 @@ footer{
 }
 .experience-indent{
   padding-left: 15px;
+}
+.project-container{
+  margin-top: 15px;
+}
+.project-link-btn{
+  display: block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: var(--bg-color-black);
+  color: var(--text-color-white);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  width: fit-content;
+}
+.project-link-btn:hover{
+  display: block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: var(--bg-color-white);
+  color: var(--text-color-black);
+  text-decoration: none;
+  border: 1.5px solid var(--border-color-black);
+  cursor: pointer;
+  border-radius: 10px;
+  width: fit-content;
+}
+.about-text{
+  text-align: justify;
 }
