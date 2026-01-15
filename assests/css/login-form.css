@@ -18,7 +18,7 @@
  }
 .login-container {
     height: auto;
-    width: 300px;
+    width: 350px;
     display: flex;
     align-items: center;
     background-color: var(--bg-color-design3);
@@ -30,8 +30,11 @@
     margin: 0% auto;
  }
  .login-container h2{
-    color: var(--text-color-black);
-    margin-bottom: 10px;    
+    background: var(--bg-color-black);
+    color: var(--text-color-white);
+    margin-bottom: 10px; 
+    width: 100%;   
+    text-align: center;
  }
  .login-form{
   margin: 10px 40px;
@@ -39,13 +42,13 @@
  }
   .login-form input {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin: 10px 0;
     border: none;
     border-bottom: #111 2px solid;
     background-color: var(--bg-color-design1);
     color: var(--text-color-black);
-    height: 30px;
+    height: 45px;
     font-size: 1.5rem;
   }
   .login-form button {
