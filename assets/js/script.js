@@ -1,42 +1,39 @@
-// SELECT ELEMENTS
 const menuToggle = document.getElementById("menuToggle");
-const navLink = document.getElementById("navlink");
+const navMenu = document.querySelector(".navbar");
+const navLinks = document.querySelectorAll(".nav-link a");
 
-// TOGGLE FUNCTION
-function toggleMenu() {
-  const isOpen = navLink.classList.toggle("active");
-  menuToggle.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", isOpen);
+function setMenuState(isOpen) {
+  if (!menuToggle || !navMenu) {
+    return;
+  }
+
+  menuToggle.classList.toggle("open", isOpen);
+  navMenu.classList.toggle("open", isOpen);
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
 }
 
-// CLICK TOGGLE
-menuToggle.addEventListener("click", (e) => {
-  e.stopPropagation();
-  toggleMenu();
-});
-
-// KEYBOARD ACCESSIBILITY
-menuToggle.addEventListener("keydown", (e) => {
-  if (e.key === "Enter" || e.key === " ") {
-    e.preventDefault();
-    toggleMenu();
-  }
-});
-
-// CLOSE WHEN CLICKING A LINK
-document.querySelectorAll(".nav-link a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLink.classList.remove("active");
-    menuToggle.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener("click", (event) => {
+    event.stopPropagation();
+    setMenuState(!navMenu.classList.contains("open"));
   });
-});
 
-// CLOSE WHEN CLICKING OUTSIDE
-document.addEventListener("click", (e) => {
-  if (!menuToggle.contains(e.target) && !navLink.contains(e.target)) {
-    navLink.classList.remove("active");
-    menuToggle.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
-  }
-});
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => setMenuState(false));
+  });
+
+  document.addEventListener("click", (event) => {
+    const clickedInsideMenu = navMenu.contains(event.target);
+    const clickedToggle = menuToggle.contains(event.target);
+
+    if (!clickedInsideMenu && !clickedToggle) {
+      setMenuState(false);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setMenuState(false);
+    }
+  });
+}

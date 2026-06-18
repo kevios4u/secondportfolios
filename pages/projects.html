@@ -3,82 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Kevin Nkwe - Portfolio</title>
-  <link rel="stylesheet" href="../assests/css/style.css">
-  <link rel="stylesheet" href="../assests/fontawesome-free-7.1.0-web/css/all.min.css">
+  <meta name="description" content="Projects by Kevin Uchechukwu Nkwe.">
+  <title>Projects | Kevin Nkwe</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/fontawesome-free-7.1.0-web/css/all.min.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <header>
-    <div class="main-head passport">
-    <img src="../assests/images/passport1.jpg" alt="Kevin Uchechukwu Nkwe | Passport">
-    <div class="head-text">
-      <h2>Kevin Nkwe | Portfolio</h2>
-      <p>Frontend Developer</p>
-    </div>
-  </div>
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="Kevin Nkwe home">
+      <img src="../assets/images/passport1.jpg" alt="Kevin Uchechukwu Nkwe">
+      <span>
+        <strong>Kevin Nkwe</strong>
+        <small>Software Engineer</small>
+      </span>
+    </a>
 
-  <div class="main-nav">
-      <!-- MENU TOGGLE -->
-    <div class="menu-toggle"
-         id="menuToggle"
-         aria-label="Toggle navigation"
-         aria-expanded="false"
-         aria-controls="navlink"
-         role="button"
-         tabindex="0">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navlink">
+      <i class="fa-solid fa-bars icon-bars" aria-hidden="true"></i>
+      <i class="fa-solid fa-xmark icon-close" aria-hidden="true"></i>
+    </button>
 
-      <i class="fa-solid fa-bars fa-3x icon-bars"></i>
-      <i class="fa-solid fa-xmark fa-1x icon-close"></i>
-
-    </div>
-    </div>
-    <div class="main-nav">
-       <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
       <ul class="nav-link" id="navlink">
-        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#home">Home</a></li>
         <li><a href="./about.html">About</a></li>
-        <li><a href="../index.html">Skills</a></li>
-        <li><a href="./projects.html">Projects</a></li>
-        <li><a href="../index.html">Experience</a></li>
-        <li><a href="../index.html">Contact</a></li>
+        <li><a href="../index.html#skill">Skills</a></li>
+        <li><a href="../index.html#project">Projects</a></li>
+        <li><a href="../index.html#experience">Experience</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
       </ul>
     </nav>
-    </div>
-    
   </header>
-  <!-- Hero -->
-   <section id="home" class="classic-hero fade-in">
-    <h1>Kevin Nkwe</h1>
-    <h3>Frontend Developer</h3>
-    <p>Computer Science graduate passionate about building clean and functional web applications.</p>
-    <a href="../index.html" class="btn">Home</a>
-   </section>
-    <!-- Projects -->
-     <section id="project" class="section">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>Personal portfolio built with HMTL and CSS.</p>
-        <span>HMTL + CSS</span>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-content">
+        <p class="eyebrow">Projects</p>
+        <h1>Small, focused web projects with room to grow.</h1>
+        <p class="hero-copy">These pieces show the foundation: semantic markup, responsive styling, tidy navigation, and practical UI patterns.</p>
+        <div class="hero-actions">
+          <a href="../index.html#contact" class="btn">Start a Conversation</a>
+          <a href="../index.html" class="btn btn-secondary">Back Home</a>
+        </div>
       </div>
-      <div class="project-card">
-        <h3>Login System</h3>
-        <p>Login system built with HMTL and CSS.</p>
-        <span>HMTL + CSS</span>
+      <aside class="hero-panel">
+        <div>
+          <span class="panel-label">Project stack</span>
+          <strong>HTML, CSS, JavaScript, and PHP contact handling.</strong>
+          <p>Simple technology, polished carefully.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section section-shell">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2>Portfolio pieces.</h2>
       </div>
-     </section>
-     <!-- footer -->
-      <footer>
-        <p>&copy 2026 Kevin Uchechukwu Nkwe - Portfolio | All Rights Reserved</p>
-        <p>
-          <a href="#"><span class="fa-brands fa-facebook fa-2x" style="color: white;"></span></a>
-          <a href="#"><span class="fa-brands fa-twitter fa-2x" style="color: white;"></span></a>
-          <a href="#"><span class="fa-brands fa-google-plus-g fa-2x" style="color: white;"></span></a>
-          <a href="#"><span class="fa-brands fa-linkedin fa-2x" style="color: white;"></span></a>
-          <a href="#"><span class="fa-brands fa-instagram fa-2x" style="color: white;"></span></a>
-        </p>
-      </footer>
-      <script src="../assests/js/script.js"></script>
+      <div class="project-grid">
+        <article class="project-card">
+          <span class="project-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span>
+          <h3>Portfolio Website</h3>
+          <p>A personal portfolio with responsive navigation, a profile summary, skills, experience, project cards, CV download, and a contact form.</p>
+          <div class="tag-row">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+          </div>
+          <a href="../index.html" class="text-link">Open portfolio <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+        <article class="project-card">
+          <span class="project-icon"><i class="fa-solid fa-right-to-bracket" aria-hidden="true"></i></span>
+          <h3>Login Form Demo</h3>
+          <p>A compact login interface demo with labeled inputs, focus states, and the same responsive shell used across the portfolio.</p>
+          <div class="tag-row">
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+          <a href="./login.html" class="text-link">Open demo <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Kevin Uchechukwu Nkwe. All rights reserved.</p>
+    <div class="social-links" aria-label="Social links">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+      <a href="#" aria-label="X Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/fontawesome-free-7.1.0-web/js/all.min.js"></script>
 </body>
 </html>

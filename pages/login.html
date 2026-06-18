@@ -3,75 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Form | Kevin Nkwe Portfolio</title>
-  <link rel="stylesheet" href="../assests/css/login-form.css">
-  <link rel="stylesheet" href="../assests/css/style.css">
-  <link rel="stylesheet" href="../assests/fontawesome-free-7.1.0-web/css/all.min.css">
+  <meta name="description" content="Login form demo by Kevin Uchechukwu Nkwe.">
+  <title>Login Demo | Kevin Nkwe</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/login-form.css">
+  <link rel="stylesheet" href="../assets/fontawesome-free-7.1.0-web/css/all.min.css">
 </head>
 <body>
-  <header>
-  <div class="main-head passport">
-    <img src="../assests/images/passport1.jpg" alt="Kevin Uchechukwu Nkwe | Passport">
-    <div class="head-text">
-      <h2>Kevin Nkwe | Portfolio</h2>
-      <p>Frontend Developer</p>
-    </div>
-  </div>
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="Kevin Nkwe home">
+      <img src="../assets/images/passport1.jpg" alt="Kevin Uchechukwu Nkwe">
+      <span>
+        <strong>Kevin Nkwe</strong>
+        <small>Software Engineer</small>
+      </span>
+    </a>
 
-  <div class="main-nav">
-    <!-- MENU TOGGLE -->
-    <div class="menu-toggle"
-         id="menuToggle"
-         aria-label="Toggle navigation"
-         aria-expanded="false"
-         aria-controls="navlink"
-         role="button"
-         tabindex="0">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navlink">
+      <i class="fa-solid fa-bars icon-bars" aria-hidden="true"></i>
+      <i class="fa-solid fa-xmark icon-close" aria-hidden="true"></i>
+    </button>
 
-      <i class="fa-solid fa-bars fa-3x icon-bars"></i>
-      <i class="fa-solid fa-xmark fa-1x icon-close"></i>
-
-    </div>
-
-    <!-- NAV -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
       <ul class="nav-link" id="navlink">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="../index.html">Skills</a></li>
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="../index.html#skill">Skills</a></li>
         <li><a href="./projects.html">Projects</a></li>
-        <li><a href="../index.html">Experience</a></li>
-        <li><a href="../index.html">Contact</a></li>
+        <li><a href="../index.html#experience">Experience</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
       </ul>
     </nav>
-  </div>
-</header>
-  <main class="main-header">
-    <div class="login-container">
-    <h2>Login</h2>
-      <div class="login-form">
-        <form action="#" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" placeholder="Username" required>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password"  placeholder="Password" required>
-        
-        <button type="submit">Login</button>
+  </header>
+
+  <main class="login-page">
+    <section class="login-container" aria-labelledby="login-title">
+      <p class="eyebrow">Demo project</p>
+      <h1 id="login-title">Login Form</h1>
+      <p>A simple interface sample with consistent spacing, labels, and focus states.</p>
+      <form class="login-form" action="#" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" autocomplete="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" autocomplete="current-password" required>
+
+        <button type="submit" class="btn">Login</button>
       </form>
-      </div>
-    </div>
+      <a href="./projects.html" class="text-link">Back to projects <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </section>
   </main>
-   <footer>
-        <p>&copy 2026 Kevin Uchechukwu Nkwe - Portfolio | All Rights Reserved</p>
-        <p>
-          <a href="#"><span class="fa-brands fa-facebook fa-2x" style="color: white;"></span></a>
-          <a href="#"><span class="fa-brands fa-twitter fa-2x" style="color: white;"></span></a>
-          <a href="#"><span class="fa-brands fa-google-plus-g fa-2x" style="color: white;"></span></a>
-          <a href="#"><span class="fa-brands fa-linkedin fa-2x" style="color: white;"></span></a>
-          <a href="#"><span class="fa-brands fa-instagram fa-2x" style="color: white;"></span></a>
-        </p>
-      </footer>
-      <script src="../assests/js/script.js"></script>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Kevin Uchechukwu Nkwe. All rights reserved.</p>
+    <div class="social-links" aria-label="Social links">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+      <a href="#" aria-label="X Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/fontawesome-free-7.1.0-web/js/all.min.js"></script>
 </body>
 </html>
